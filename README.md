@@ -1,6 +1,6 @@
-## Hi there 👋
+## Hey, how is going? 👋
 
-*iOS Engineer | 🔗 Blockchain Passionate | Apple Enthusiast 🍎*
+*iOS Engineer | 🔗 Blockchain Passionate | Apple Enthusiast 🍎 | Gym lover*
 
 🚀 In love with technology and innovation
 
