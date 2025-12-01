@@ -13,9 +13,12 @@ My role focuses on developing internal tools to support **server and application
 
 ## 🧪 Off-work / Personal Project
 
-### 📱 PlateHunt – AI-powered Italian Vehicle Registration Tracker *(in testing phase)*
+### 📱 PlateHunt – AI-powered Italian Vehicle Registration Tracker *(developing phase)*
 **PlateHunt** is the first app in Italy that tracks and analyzes vehicle registration data to identify the most recent license plates released.  
 It provides **statistical insights and predictive models** by leveraging:
+
+**Last Update - 01/12/2025:** Trying to developing a Python script to check new data every morning (it will run on an Ubuntu Server on AWS)
+
 
 `Swift · Core ML · Create ML · MLX · Firebase · Firebase Functions · Python backend`
 
