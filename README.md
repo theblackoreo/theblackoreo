@@ -1,177 +1,62 @@
-## Hey, how is going? 👋
+## Hi, I'm Fabio 👋
 
-*iOS Engineer | 🔗 Blockchain Passionate | Apple Enthusiast 🍎 | Gym lover*
+Software Engineer (Swift, Python, TypeScript/Node.js) · AI-Assisted Development · Distributed Systems
 
-🚀 In love with technology and innovation
+---
 
 ## 🚀 Currently
 
-I'm part of the **Graduate Talent Program at UBS**, working as a **Software Engineer in the WMPC EMEA Tech division**.  
-My role focuses on developing internal tools to support **server and application obsolescence management** across the EMEA region—ensuring technological sustainability, lifecycle compliance, and proactive risk mitigation.
+Part of the **Graduate Talent Program at UBS**, Zurich (two rotations):
+
+- **Now — iOS Software Engineer, AI-Augmented Engineering / Mobile Payments** (Feb 2026–present). Configure agent harnesses (Claude Code, opencode) with MCP tool integrations to orchestrate LLM agents for code analysis, generation, and review across a 1M+ LOC banking codebase. Caught concurrency regressions pre-production in UBS Mobile Banking (3M+ users) via multithreaded XCTest suites as release gates.
+- **Previously — Software Engineer, Full-Stack Risk & Data Platform** (Sept 2025–Jan 2026). Built Python ETL pipelines ingesting and correlating 2M+ rows across 300+ production apps (EMEA), feeding real-time TypeScript dashboards, CI-gated with RBAC + audit logging.
 
 ---
 
-## 🧪 Off-work / Personal Project
+## 🛠 Selected Work
 
-### 📱 PlateHunt – AI-powered Italian Vehicle Registration Tracker *(developing phase)*
-**PlateHunt** is the first app in Italy that tracks and analyzes vehicle registration data to identify the most recent license plates released.  
-It provides **statistical insights and predictive models** by leveraging:
+*(private repos — code not public, described here for context)*
 
-**Last Update - 01/12/2025:** Trying to developing a Python script to check new data every morning (it will run on an Ubuntu Server on AWS)
+**SkiWay** — Full-Stack Geospatial Platform (80K+ LOC) · Co-Founder & Developer, in development
+Node.js REST APIs over PostgreSQL, containerized Python/GDAL pipeline processing 200+ MB geospatial datasets, CI-gated on AWS at sub-100ms p99 tile latency, offline coverage for 500+ ski resorts, native Swift/CoreML client.
+`Node.js · Python · PostgreSQL · GDAL · AWS · Swift/CoreML`
 
+**Swiss Tech Job Radar** — AI-Directed Full-Stack Job-Intelligence Platform (2026)
+Built and tested through an AI-directed workflow with Claude Code, owning architecture and validation decisions myself. Node.js/Express backend + React/TypeScript frontend ingesting and correlating postings from 7 ATS APIs and structured career-page sources (Greenhouse, Lever, Workday, Ashby, Oracle, Pinpoint) across 24 Swiss companies, with explainable CV–job fit scoring and optional local-LLM semantic matching. ~3.7K LOC.
+`TypeScript · Node.js · React · Express · SQLite · Vitest · LLM integration`
 
-`Swift · Core ML · Create ML · MLX · Firebase · Firebase Functions · Python backend`
-
-🔍 Features:
-- 🚗 Real-time search and tracking of recently issued license plates  
-- 📊 Statistical analysis & prediction of registration trends  
-- 🤖 Machine learning integration for forecasting using **Core ML, Create ML and MLX**  
-- ☁️ Backend supported by **Firebase + Python server**
-
-Currently under testing and optimization before public release.
-
-## 🔥 Featured Project
-
-### 🎮 Solana On-Chain Battleship Game  
-**🌐 Fully Decentralized • Trustless • Lives Forever on the Blockchain**
-
-- 🔗 **Backend / Server**  
-  https://github.com/theblackoreo/HyperShipBattle_Server  
-
-- 🎨 **Frontend Client**  
-  https://github.com/theblackoreo/deep-battle-ship  
-
-This project implements a fully on-chain battleship game powered by the **Solana blockchain**, where _every in-game action is represented by a transaction_. Players interact directly with smart contracts, ensuring transparent mechanics and provable fairness.
-
-#### 🧠 Features
-- 🔒 Fully On-Chain Logic (no centralized server)
-- 🛰 Decentralized State Management
-- ⚡ High-performance and low-cost transactions (Solana)
-- 🪙 Token-based Rewards System
-- 🔁 Each shot is randomly assigned per transaction
-- ♾️ Immutable & permanently hosted on-chain
-
-#### 🛠 Tech Stack
-| Layer | Technologies |
-|------|--------------|
-| Blockchain | Solana |
-| Smart Contracts | Rust + Anchor |
-| Frontend | React |
-| Architecture | Fully On-Chain, Token-Enabled |
-
---- 
-### 📱 Whooliday – Intelligent Travel Booking App  
-_A feature-rich mobile app that revolutionizes accommodation planning for travelers._
-
-Developed using **Swift & SwiftUI**, Whooliday offers users smart tools to discover and book hotels or apartments using **advanced search, real-time tracking, and intelligent insights**.
-
-#### ✨ Key Features
-- 🔍 Advanced Search + high-quality accommodation previews  
-- 📊 Detailed price trend charts for strategic planning  
-- 📉 Real-time price tracking and alerts  
-- 🌎 Suggested destinations with historical climate data  
-- 🌐 Multilingual support (EN, IT, DE, ES, FR, ZH)  
-
-#### 🛠 Tech & Architecture
-| Layer | Tech |
-|------|------|
-| UI | SwiftUI |
-| Structure | MVVM + Combine |
-| Services | Firebase · Google Maps API · Open Meteo API · Firestore |
-| Design | 3-tier client-server architecture |
-
-🔗 Repository: https://github.com/theblackoreo/Whooliday  
-
----
-### 🤖 SAHARA – Secure Ad-Hoc Advanced Resilient Architecture  
-_A decentralized reputation-based routing system for mobile ad-hoc networks (MANETs)_
-
-📚 Developed as part of my Master’s Thesis at **Florida Atlantic University (FAU, USA)** within the **AI & Autonomous Vehicles Lab**.
-
-SAHARA (Secure Ad-Hoc Advanced Resilient Architecture) is a decentralized system designed to improve **routing decisions, network resilience, and security** in mobile ad-hoc networks with minimal overhead. It is specifically engineered for **resource-constrained environments**, such as autonomous robot and drone swarms.
-
-#### 🔍 Key Concepts Integrated
-- 📡 **Routing Protocol Optimization**
-- 🔁 **Efficient Information Dissemination**
-- 🔐 **Network Integrity & Security**
-
-The system autonomously adapts to dynamic conditions, mitigating attacks while preserving performance and energy efficiency.
-
-#### 🚀 Core Features
-| Feature | Description |
-|--------|-------------|
-| 🔄 Information Dissemination | SAHARA Sync uses lightweight diffusion to reduce overhead vs. traditional flooding |
-| ⭐ Reputation-Based Evaluation | Nodes are assessed on trustworthiness to improve routing decisions |
-| 🛡 Resilience to Attacks | Detects and responds to malicious activity (packet drop, DoS) ensuring performance recovery |
-| 🤖 Self-Adapting System | Automatically adjusts to changing conditions to improve efficiency & security |
-| 🧪 Simulation | Fully simulated using **NS-3** (discrete-event network simulator) |
-
-#### 🛰 Use Case
-Ideal for **swarm robotics and drone networks**, where resource efficiency, decentralized decision-making, and security are critical.
-
-💡 Key benefits:
-- 📈 Improved **routing robustness** via reputation-based decisions  
-- 🔋 Reduced **communication and energy costs**  
-- 🔒 Enhanced protection from **internal attacks on network integrity**
-
-🔗 Repository: https://github.com/theblackoreo/smesh
-
-### 🖼️ Image Quality Assessment (IQA)  
-_Group project focused on human-based visual quality evaluation of images._
-
-🔗 Repository: https://github.com/theblackoreo/image_quality_assessment  
-🌐 Live website: https://siqa.pythonanywhere.com
-
-This project implements a **subjective image quality assessment system** where users rate visual content to generate quality insights. A full-stack approach was used to create a responsive web platform enabling testing, data collection, and visualization.
-
-#### 🔍 Main Features
-- 📊 Subjective rating-based quality evaluation
-- 🌐 Live web application (PythonAnywhere hosting)
-- 📹 Preview video + interactive UI
-- ⚠️ Webhook-based auto-deploy integrated into the repository
-
-#### 🛠 Tech Stack
-`Python · Jupyter Notebook · JavaScript · HTML5 · CSS3 · Flask · Webhooks`
-
-> Designed to evaluate perception-driven image quality using crowdsourced human judgment.
+**Polycopy** — On-Chain Copy-Trading Engine for Polymarket (Polygon/EVM), ~4.5K LOC
+WebSocket real-time activity stream + Data API reconciliation → FAK order routing via the Polymarket CLOB v2 SDK. Risk layer (worst-price slippage caps, position/daily limits, crash-safe execution state), paper-trading Test Lab for market-impact and latency simulation, multi-scheme wallet signing (EOA, Proxy, Gnosis Safe), AES-256-GCM credential encryption. Deployed on AWS EC2 (Docker Compose, GitHub Actions CI/CD, Caddy).
+`TypeScript · Solidity/EVM · Rust (tooling) · Docker · AWS · GitHub Actions`
 
 ---
 
-### 🧩 CA-Project – Autonomous Maze Solver  
-_Algorithmic exploration of maze solving using image-based extraction and parallel computation._
+## 📦 Public Repos
 
-🔗 Repository: https://github.com/theblackoreo/ACA-Project
+### 🤖 SAHARA — Secure Ad-Hoc Advanced Resilient Architecture
+Master's thesis @ Politecnico di Milano / NECSTLab, visiting research at the **iSENSE Lab, Florida Atlantic University**. A reputation-based, Byzantine-resilient data-dissemination protocol for infrastructure-less ad-hoc networks (drone-swarm scenarios, simulated network nodes) — reputation consensus, SHA-256 block-chaining integrity, Bloom-filter set reconciliation. Automated 500+ NS-3 simulation configurations across 25–196-node topologies: **37x lower data overhead, 36% lower packet loss vs. DSDV, O(n^1.47) empirical scaling**.
+`C++ · NS-3 · Python` · [Repository](https://github.com/theblackoreo/smesh)
 
-This project aims to solve a **perfect maze** (only one solution) extracted from binary or grayscale images using OpenCV. Two implementations were built:  
-✔ **Serial version**  
-✔ **Parallel version (OpenMPI)** with performance benchmark on Google Cloud clusters.
+### 🧩 Parallel Maze Solver (CA-Project)
+Perfect-maze extraction from binary/grayscale images (OpenCV) with two implementations — serial and parallel (OpenMPI) — domain-decomposed across images up to **64M pixels**, near-8x speedup on a 16-node GCP cluster with strong/weak-scaling benchmarks.
+`C++ · OpenCV · OpenMPI · Google Cloud` · [Repository](https://github.com/theblackoreo/ACA-Project)
 
-#### ⚙️ Core Features
-| Feature | Description |
-|--------|-------------|
-| 🖼 Image-based maze extraction | using OpenCV (C++) |
-| 🔍 Perfect maze logic | one entrance, one exit, one unique path |
-| ⚡ Parallel algorithm | OpenMPI on multi-core VMs |
-| 📈 Performance analysis | speedup & execution timing |
-| 🔬 Optimized for large-scale data | up to 72M+ pixels |
+### 🖼️ Image Quality Assessment (IQA)
+Subjective, crowdsourced image-quality-evaluation platform — full-stack web app for rating collection and visualization. Basis for a contributor credit on *"Collaborative CNN-based Image Quality Assessment"* (IARIA, 7th Int'l Conf. on Visual Paradigms, Venice, 2022).
+`Python · Flask · Jupyter · JavaScript` · [Repository](https://github.com/theblackoreo/image_quality_assessment)
 
-#### 🛠 Tech Stack
-`C++ · OpenCV · OpenMPI · Google Cloud Cluster · High-Performance Computing`
+### 🎮 On-Chain Battleship (Solana)
+Fully on-chain battleship game — every move is a Solana transaction, no centralized server. Smart contracts in Rust/Anchor, React frontend, token-based rewards.
+`Rust · Anchor · Solana · React` · [Client](https://github.com/theblackoreo/deep-battle-ship) · [Server](https://github.com/theblackoreo/HyperShipBattle_Server)
 
-> A high-efficiency pathfinding algorithm designed for large image-based labyrinths with multithreading optimization.
+### 📱 Whooliday — Travel Booking App
+iOS app for accommodation search and booking: price-trend charts, real-time price tracking/alerts, destination suggestions with historical climate data, 6-language support.
+`Swift · SwiftUI · MVVM + Combine · Firebase · Google Maps API · Open Meteo API` · [Repository](https://github.com/theblackoreo/Whooliday)
 
+### 🚗 PlateHunt — Italian Vehicle Registration Tracker *(in development)*
+Tracks and analyzes newly issued Italian license plates, with statistical insights and forecasting.
+`Swift · Core ML · Create ML · MLX · Firebase · Python`
 
-<!--
-**theblackoreo/theblackoreo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+📫 fabio.tagliani99@icloud.com · [LinkedIn](https://linkedin.com/in/fabio-tagliani)
