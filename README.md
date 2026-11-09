@@ -1,6 +1,6 @@
 ## Hi, I'm Fabio 👋
 
-Software Engineer (Python, TypeScript/Node.js, Swift) · AI Platforms & MLOps · Distributed Systems
+Software Engineer at UBS, Zurich (Python, TypeScript/Node.js, Swift) · AI Platforms & MLOps · Distributed Systems
 
 ---
 
@@ -8,9 +8,11 @@ Software Engineer (Python, TypeScript/Node.js, Swift) · AI Platforms & MLOps ·
 
 Part of the **Graduate Talent Program at UBS**, Zurich (three rotations):
 
-- **Now — Software Engineer, MLOps / AI-as-a-Service Platform** (Aug 2026–present). Building the model-routing service for the bank's internal AI platform: choosing the best-suited model per prompt across self-hosted **vLLM** and **Azure AI Foundry** endpoints running on **Kubernetes**, and provisioning the supporting Azure infrastructure as code in **Terraform**.
-- **Previously — Software Engineer, Mobile Payments / AI-Augmented Engineering** (Feb–Aug 2026). Shipped client features against REST payment APIs in UBS's consumer mobile banking app, and wrote multithreaded XCTest suites wired into the release pipeline as gates, catching concurrency regressions before production. Integrated MCP tool definitions into agent harnesses (Claude Code, opencode) so LLM agents could assist with code analysis and review.
-- **Previously — Software Engineer, Full-Stack Risk & Data Platform** (Sept 2025–Jan 2026). Built Python ETL pipelines correlating data from 300+ EMEA production applications into SQL-backed real-time dashboards, cutting manual triage 35%, shipped through CI-gated pipelines with RBAC + audit logging.
+- **Now — Software Engineer, MLOps / AI-as-a-Service Platform** (Aug 2026–present). Building Python model-routing microservices that give internal teams one API to 6 open-weight LLMs (Qwen, Gemma; weights from Hugging Face) served on multi-GPU **vLLM** and to **Azure AI Foundry**, running on **Kubernetes** with the supporting Azure infrastructure as code in **Terraform** and Grafana observability (platform: 35,000 users, billions of tokens per day). Built a benchmarking pipeline that runs on every merge request to measure model latency on H100/H200 GPUs (results in Databricks, TypeScript/Python dashboard), replacing ad-hoc individual benchmarks with one shared standard. Sped up JSON serialization by up to 10x in LLM inference pipelines by adopting orjson.
+- **Previously — Software Engineer, Mobile Payments / AI-Augmented Engineering** (Feb–Aug 2026). Shipped Swift/SwiftUI payment features against REST APIs in the UBS Mobile Banking app, and wrote multithreaded XCTest suites wired into the GitLab CI/CD release gates, catching concurrency regressions before production. Integrated MCP tool definitions into agent harnesses (Claude Code, opencode) so LLM agents could assist with code analysis and review.
+- **Previously — Software Engineer, Full-Stack Risk & Data Platform** (Sept 2025–Jan 2026). Cut manual triage by 35% for risk and platform stakeholders with a full-stack web app — TypeScript frontend, SQL dashboards and Python ETL pipelines correlating data from 300+ EMEA production applications — with RBAC and audit logging, shipped through CI-gated pipelines.
+
+**Also:** Skills Building Stream Lead, UBS GTPNet (2026) — led a team of 3 that ran 10 online and in-person events with KPMG and UBS senior-management speakers, reaching 300 participants with 94% positive feedback on a USD 8,000 budget.
 
 ---
 
@@ -18,15 +20,20 @@ Part of the **Graduate Talent Program at UBS**, Zurich (three rotations):
 
 *(private repos — code not public, described here for context)*
 
-**SkiWay** — Full-Stack Geospatial Platform · Co-Founder & Developer, in development
-Native **SwiftUI** client (~68K LOC) and a **Next.js/React** admin console (~12K LOC TypeScript) for moderation and analytics, over a **PostgreSQL** layer I designed and operate — constraint design, PL/pgSQL, row-level security, `SECURITY DEFINER SET search_path` hardening, ordered migrations promoted dev → prod. A containerless **Python/GDAL** pipeline turns raw elevation and piste data into served map tiles. Offline coverage for 500+ ski resorts.
-`Swift/SwiftUI · TypeScript · Next.js · Python · GDAL · PostgreSQL`
+**SkiWay** — 3D Ski Navigation App · Co-Founder & Software Engineer (Jan 2026–present) · [iOS public beta on TestFlight](https://testflight.apple.com/join/UWDTQsWV)
+Co-founded with one partner: native iOS, Apple Watch, Garmin and Android apps on one Supabase backend, with offline 3D ski maps built from OpenStreetMap and elevation data. My parts:
+- **AI-assisted live status matching** (Python, AWS EC2): links lift and piste status from resort websites to map features. Deterministic rules run first; a Cloudflare Workers AI model handles only ambiguous names, choosing from a closed shortlist and returning validated JSON, with caching, quotas and a circuit breaker, and every suggestion is confirmed by a person. 47 of 53 official entries matched in the Pila pilot; 28-case offline test suite; CI on GitHub Actions.
+- **Android app, end to end** (Kotlin, Jetpack Compose), including a custom difficulty-aware Dijkstra router for fastest or easiest routes over the slope graph, covered by graph-invariant tests.
+- **Admin console** (Next.js/React, TypeScript): users, moderation, map corrections, audit log and analytics on Supabase/PostgreSQL with row-level security.
+- Contributions to the SwiftUI iOS app and to the 3D map's GPS slope and lift recognition.
 
-**Polycopy** — Real-Time Event-Driven Trade Replication Engine (~7.9K LOC)
-Worker consuming a live **WebSocket** activity stream, reconciled against a REST Data API, routing FAK orders through the Polymarket CLOB v2 SDK. Risk layer with slippage caps and position/daily limits, a persisted crash-safe execution state machine, and exactly-once ingestion enforced by **database unique constraints** rather than application checks. Paper-trading Test Lab simulating market impact, latency and partial fills. 97 tests across 18 suites; releases gated on lint/tests/type-check/build and deployed to AWS EC2 over SSH with a pinned host key, into non-root multi-stage containers verified by a post-deploy health check.
+`Kotlin · Jetpack Compose · Swift/SwiftUI · TypeScript · Next.js · Python · PostgreSQL/Supabase · Cloudflare Workers AI · AWS`
+
+**Polycopy** — Real-Time Event-Driven Trade Replication Engine
+Worker consuming a live **WebSocket** activity stream, reconciled against a REST Data API, routing FAK orders through the Polymarket CLOB v2 SDK. Risk layer with slippage caps and position/daily limits, a persisted crash-safe execution state machine, and idempotent ingestion enforced by **database unique constraints** rather than application checks. Paper-trading Test Lab simulating market impact, latency and partial fills. 97 tests across 18 suites; releases gated on lint/tests/type-check/build and deployed to AWS EC2 over SSH with a pinned host key, into non-root multi-stage containers verified by a post-deploy health check.
 `TypeScript · Next.js · viem/ethers (EVM) · Prisma · Docker · AWS · GitHub Actions`
 
-**Swiss Tech Job Radar** — Job-Market Intelligence Platform (~8K LOC)
+**Swiss Tech Job Radar** — Job-Market Intelligence Platform
 **React 19/Vite** front end on an **Express/TypeScript** backend ingesting 7 ATS APIs and structured career-page sources (Greenhouse, Lever, Workday, Ashby, Oracle, Pinpoint) across 24 Swiss companies, with explainable CV–job fit scoring by a **locally-run LLM** and structured-output parsing. Vitest-tested. Built through an AI-directed workflow with Claude Code, owning the architecture and validation decisions myself.
 `TypeScript · React 19 · Node.js · Express · SQLite · Vitest · local LLM`
 
@@ -47,11 +54,11 @@ Competition solver for scheduling ML operator graphs onto accelerators with limi
 `C++ · Python · Linux` · [Repository](https://github.com/theblackoreo/ML_Sys_Sol)
 
 ### 🤖 SAHARA — Secure Ad-Hoc Advanced Resilient Architecture
-Master's thesis @ Politecnico di Milano / NECSTLab, visiting research at the **iSENSE Lab, Florida Atlantic University**. A reputation-based, Byzantine-resilient data-dissemination protocol for infrastructure-less ad-hoc networks (drone-swarm scenarios, simulated network nodes) — reputation consensus, SHA-256 block-chaining integrity, Bloom-filter set reconciliation. Automated 500+ NS-3 simulation configurations across 25–196-node topologies: **37x lower data overhead, 36% lower packet loss vs. DSDV, O(n^1.47) empirical scaling**.
+Master's thesis @ Politecnico di Milano / NECSTLab, visiting research at the **iSENSE Lab, Florida Atlantic University**. A reputation-based, Byzantine-resilient data-dissemination protocol for infrastructure-less ad-hoc networks (drone-swarm scenarios, simulated network nodes) — reputation consensus, SHA-256 block-chaining integrity, Bloom-filter set reconciliation. Automated 500+ NS-3 simulation configurations across 25–196-node topologies; in adversarial simulations, **37x lower data overhead than flooding and 36% lower packet loss than DSDV**.
 `C++ · NS-3 · Python` · [Repository](https://github.com/theblackoreo/smesh)
 
 ### 🧩 Parallel Maze Solver (ACA-Project)
-Perfect-maze extraction from binary/grayscale images (OpenCV) with two implementations — serial and parallel (Open MPI) — domain-decomposed with halo-row exchange across images up to **64M pixels**, reaching **8x speedup (~50% parallel efficiency)** on a 16-node GCP cluster with strong/weak-scaling benchmarks.
+Perfect-maze extraction from binary/grayscale images (OpenCV) with two implementations — serial and parallel (Open MPI) — domain-decomposed with halo-row exchange, reaching **8x speedup (~50% parallel efficiency)** on a 16-node GCP cluster with strong/weak-scaling benchmarks. Built with a fellow student.
 `C++ · OpenCV · Open MPI · Google Cloud` · [Repository](https://github.com/theblackoreo/ACA-Project)
 
 ### 🖼️ Image Quality Assessment (IQA)
@@ -60,7 +67,7 @@ Subjective, crowdsourced image-quality-evaluation platform — full-stack web ap
 
 ### 🎮 On-Chain Battleship (Solana)
 Fully on-chain battleship game — every move is a Solana transaction, no centralized server. Smart contract in **Rust/Anchor**, React frontend, token-based rewards.
-`Rust · Anchor · Solana · React` · [Client](https://github.com/theblackoreo/deep-battle-ship) · [Server](https://github.com/theblackoreo/HyperShipBattle_Server)
+`Rust · Anchor · Solana · React` · [Repository](https://github.com/theblackoreo/deep-battle-ship)
 
 ### 📱 Whooliday — Travel Booking App
 iOS app for accommodation search and booking: price-trend charts, real-time price tracking/alerts, destination suggestions with historical climate data, 6-language support.
