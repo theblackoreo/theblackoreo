@@ -20,7 +20,7 @@ Part of the **Graduate Talent Program at UBS**, Zurich (three rotations):
 
 *(private repos — code not public, described here for context)*
 
-**SkiWay** — 3D Ski Navigation App · Co-Founder & Software Engineer (Jan 2026–present) · [iOS public beta on TestFlight](https://testflight.apple.com/join/UWDTQsWV)
+**SkiWay** — 3D Ski Navigation App · Co-Founder & Software Engineer (Jan 2026–present)
 Co-founded with one partner: native iOS, Apple Watch, Garmin and Android apps on one Supabase backend, with offline 3D ski maps built from OpenStreetMap and elevation data. My parts:
 - **AI-assisted live status matching** (Python, AWS EC2): links lift and piste status from resort websites to map features. Deterministic rules run first; a Cloudflare Workers AI model handles only ambiguous names, choosing from a closed shortlist and returning validated JSON, with caching, quotas and a circuit breaker, and every suggestion is confirmed by a person. 47 of 53 official entries matched in the Pila pilot; 28-case offline test suite; CI on GitHub Actions.
 - **Android app, end to end** (Kotlin, Jetpack Compose), including a custom difficulty-aware Dijkstra router for fastest or easiest routes over the slope graph, covered by graph-invariant tests.
